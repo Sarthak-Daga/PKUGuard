@@ -1,0 +1,4 @@
+The scripts folder has some bash files to install the libraries and qemu , so plkease run the following commands to use execute the script file.
+
+"chmod +x scripts/setup_dev.sh"
+"chmod +x scripts/run_qemu.sh"
