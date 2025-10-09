@@ -1,12 +1,14 @@
-CC = gcc
-CFLAGS = -Wall -Wextra -O2
-TARGET = pku-demo
+CC=gcc
+CFLAGS=-O2 -Wall
 
-all: $(TARGET)
+all: pku-check pku-demo
 
-$(TARGET): pku-demo.c
-	$(CC) $(CFLAGS) -o $(TARGET) pku-demo.c
+pku-check: pku-check.c
+	$(CC) $(CFLAGS) -o pku-check pku-check.c
+
+pku-demo: pku-demo.c
+	$(CC) $(CFLAGS) -o pku-demo pku-demo.c
 
 clean:
-	rm -f $(TARGET)
+	rm -f pku-check pku-demo
 
